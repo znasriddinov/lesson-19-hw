@@ -1,0 +1,130 @@
+.nutrition {
+  & .nutrition-left {
+    padding-top: 223px;
+    position: relative;
+
+    & h1 {
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 60px;
+      width: 414px;
+    }
+
+    & p {
+      margin-top: 40px;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    & .btn {
+      background-color: $primary-color;
+      color: #fff;
+      border: 1px solid transparent;
+      padding: 14px 26px;
+      margin-top: 52px;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+
+    & .btn:hover {
+      background-color: #fff;
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  & .nutrition-right {
+    background-image: url("/imgs/header-background.png");
+    background-repeat: no-repeat;
+    left: 550px;
+    height: 696px;
+    width: 720px;
+    top: 0;
+    z-index: 1;
+    position: relative;
+    top: -600px;
+
+    & img {
+      position: absolute;
+      top: 173px;
+      left: -160px;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .nutrition-left {
+    & h1 {
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 60px;
+      padding-left: 117px;
+    }
+
+    & p {
+      font-family: Oswald;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+      padding-left: 118px;
+      margin-top: 41px;
+    }
+
+    & .btn {
+      background-color: $primary-color;
+      color: #fff;
+      border: 1px solid transparent;
+      padding: 14px 26px;
+      margin-top: 52px;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      margin-left: 120px;
+    }
+
+    & .btn:hover {
+      background-color: #fff;
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .nutrition {
+    & .nutrition-left {
+      position: absolute;
+      z-index: 10;
+      color: #fff;
+      text-align: center;
+
+      & h1 {
+        font-size: 36px;
+        line-height: 36px;
+        width: 249px;
+      }
+
+      & p {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+
+    & .nutrition-right {
+      background-image: url("/imgs/mobile/cat-mobile.png");
+      background-repeat: no-repeat;
+      height: 305px;
+      width: 100%;
+      top: 200px;
+      position: relative;
+      left: 0px;
+    }
+  }
+}

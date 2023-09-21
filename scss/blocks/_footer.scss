@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 63px 0;
+  gap: 53px;
+
+  & .logos {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 63px 0;
+
+    & .logos {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+    }
+  }
+}
